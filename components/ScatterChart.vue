@@ -1,13 +1,13 @@
 <template>
-    <canvas id="scatterchart"></canvas>
+  <canvas id="scatter-chart"></canvas>
 </template>
 
-<script >
+<script>
 import { Chart } from 'chart.js/auto';
 
-export default{
-    methods(){
-        const data = {
+  export default {
+    mounted(){
+      const data = {
   datasets: [{
     label: 'Scatter Dataset 1',
     data: [{
@@ -22,24 +22,53 @@ export default{
     }, {
       x: 1,
       y: 1
-    },{
-        x:2,
-        y:4
-    }],
-    backgroundColor: 'rgb(255, 99, 132)',
-  },],
+    },
+  {
+    x:2,
+    y:4
+  }],
+    backgroundColor: 'rgb(255, 99, 132)'
+  },{
+    label:'Scatter Dataset 2',
+    data:[
+    {
+      x: -2,
+      y: -4
+    }, {
+      x: -1,
+      y: -1
+    }, {
+      x: 0,
+      y: 1
+    }, {
+      x: 1,
+      y: -1
+    },
+  {
+    x:2,
+    y:-4
+  }
+    ],
+    backgroundColor:"#88ccfc"
+  }],
 };
-
-        const ctx = document.getElementById('scatterchart')
-        const myChart = new Chart(ctx,{
-            type: 'scatter',
+const ctx = document.getElementById('scatter-chart')
+const myChart = new Chart(ctx,{
+  type: 'scatter',
   data: data,
-  
-      })
+  options: {
+    scales: {
+      x: {
+        type: 'linear',
+        position: 'bottom'
+      }
     }
-}
+  }
+})
+    }
+  }
 </script>
 
-<style  scoped>
+<style lang="scss" scoped>
 
 </style>

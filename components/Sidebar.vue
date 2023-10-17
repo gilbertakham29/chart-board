@@ -355,7 +355,7 @@
                     </section>
                 </div>
 
-                <div class="grid grid-cols-12 mt-5 p-5">
+                <div class="grid grid-cols-12  mt-5 gap-5">
                     <section class="md:col-span-6 col-span-12">
                         <div class="border bg-white p-4 rounded-2xl">
                             <div class="flex justify-between items-center">
@@ -423,9 +423,48 @@
     </div>
     </div>
                             </div>
+                            <div>
                             <ScatterChart/>
+                          </div>
                         </div>
                     </section>
+                </div>
+
+                <div class="grid grid-cols-12 mt-5 gap-5">
+                  <section class="md:col-span-6 col-span-12">
+                    <div class="border bg-white p-4 rounded-2xl">
+                      <div class="flex justify-between items-center">
+                        <div>
+                          <h6 class="text-lg font-bold">Spend by Radar</h6>
+                        </div>
+                        <div>
+                          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="hidden text-black border border-gray-400 font-medium rounded-full text-sm px-3 py-2 text-center md:inline-flex items-center dark:bg-gray-600 dark:focus:ring-gray-800" type="button"> Last week<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+      </li>
+    </ul>
+    </div>
+                        </div>
+                      </div>
+                      <RadarChart/>
+                    </div>
+                  </section>
                 </div>
             </div>
         </div>
@@ -441,6 +480,7 @@ import LineChart from './LineChart.vue';
 import Resonance from './Resonance.vue';
 import BubbleChart from './BubbleChart.vue';
 import ScatterChart from './ScatterChart.vue';
+import RadarChart from './RadarChart.vue';
 export default{
 
 }
