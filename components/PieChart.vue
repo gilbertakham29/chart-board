@@ -10,10 +10,10 @@ export default {
  
     mounted(){
         const data = {
-  labels: chartData.pichart.labels,
+  labels: chartData.piechart.labels,
   datasets: [{
     label: 'My First Dataset',
-    data: chartData.pichart.values,
+    data: chartData.piechart.values,
     backgroundColor: [
       '#f794ab',
       'grey',

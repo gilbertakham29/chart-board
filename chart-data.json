@@ -3,7 +3,7 @@
         "lables":[ "Food","Tech","News","Health","Shopping"],
         "values":[250, 50, 100,200,170,45]
     },
-    "pichart":{
+    "piechart":{
         "labels":["Samsung","IPhone","Realme", "Oppo", "Infix"],
         "values":[300, 50, 100,200,170,45]
     },
