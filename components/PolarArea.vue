@@ -4,22 +4,14 @@
 
 <script>
 import { Chart } from 'chart.js/auto';
-
+import chartData from '../chart-data.json'
     export default {
         mounted(){
             const data = {
-  labels: [
-    'Eating',
-    'Drinking',
-    'Sleeping',
-    'Desiging',
-    'Coding',
-    'Cycling',
-    'Running'
-  ],
+  labels: chartData.polarchart.labels,
   datasets: [{
     label: 'My First Dataset',
-    data: [10,20,32,70,25,60,74,18,89,70],
+    data: chartData.polarchart.values,
     backgroundColor: [
       "#f5d5df",
       "#d1c9cb"

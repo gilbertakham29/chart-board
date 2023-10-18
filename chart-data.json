@@ -1,0 +1,120 @@
+{
+    "doughnut":{
+        "lables":[ "Food","Tech","News","Health","Shopping"],
+        "values":[250, 50, 100,200,170,45]
+    },
+    "pichart":{
+        "labels":["Samsung","IPhone","Realme", "Oppo", "Infix"],
+        "values":[300, 50, 100,200,170,45]
+    },
+    "linchart":{
+        "labels":["January","February","March","April","May","June","July"],
+        "values1":[40, 20, 12, 56, 10, 30, 25, 56],
+        "values2":[10, 30, 25, 56, 78, 18, 29]
+    },
+    "barchart":{
+        "labels": ["January","February","March","April","May","June","July"],
+        "values":[40, 20, 12, 10, 30, 25, 56]
+    },
+    "resocahrt":{
+        "labels": [
+            "Creative A",
+            "Creative B",
+            "Creative C",
+            "Creative D"
+            ],
+            "values":[24,26,28,45]
+    },
+    "bubbleChart":{
+        "labels":[],
+        "values":[{
+            "x": 20,
+            "y": 10,
+            "r": 15
+          }, {
+            "x": 40,
+            "y": 10,
+            "r": 10
+          }
+          
+      ]
+    },
+    "scatterchart":{
+        "labels":[{"label1":"Scatter Dataset 1","label2":"Scatter Dataset 2"}],
+        "values":{
+            "value1":[{
+                "x": -2,
+                "y": 4
+            },{
+                "x": -1,
+                "y": 1
+            },{
+                "x": 0,
+                "y": 0
+            },
+        {
+            "x": 1,
+            "y": 1
+        },{
+            "x":2,
+            "y":4
+        }],
+        "value2":[
+            {
+                "x": -2,
+                "y": -4
+              }, {
+                "x": -1,
+                "y": -1
+              }, {
+                "x": 0,
+                "y": 1
+              }, {
+                "x": 1,
+                "y": -1
+              },
+            {
+              "x":2,
+              "y":-4
+            }
+        ]
+        }
+    },
+    "radarchart":{
+        "labels":["Eating",
+        "Drinking",
+        "Sleeping",
+        "Designing",
+        "Coding",
+        "Cycling",
+        "Running"],
+     "values":[{
+        "value1":[65, 59, 90, 81, 56, 55, 40],
+        "value2":[28, 48, 40, 19, 96, 27, 100]
+     }]   
+    },
+    "polarchart":{
+        "labels":[
+            "Eating",
+            "Drinking",
+            "Sleeping",
+            "Desiging",
+            "Coding",
+            "Cycling",
+            "Running"
+          ],
+          "values": [10,20,32,70,25,60,74,18,89,70]
+    },
+    "horizontalchart":{
+        "labels":["January","February","March","April","May","June","July"],
+        "values":{
+            "value1":[26, 39, 50, 71, 66, 45, 40],
+            "value2":[36, 29, 60, 51, 56, 25, 20],
+            "value3":[15, 39, 70, 41, 86, 75, 40],
+            "value4":[45, 29, 70, 31,26, 95, 34],
+            "value5":[65, 59, 80, 81, 56, 55, 40]
+        }
+    }
+   
+
+}

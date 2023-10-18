@@ -4,7 +4,7 @@
 
 <script>
 import { Chart } from 'chart.js/auto';
-
+import chartData from "../chart-data.json"
     export default {
         
         mounted(){
@@ -13,13 +13,13 @@ import { Chart } from 'chart.js/auto';
   datasets: [{
     label: 'First Dataset',
     data: [{
-      x: 20,
-      y: 10,
-      r: 15
+      x: chartData.bubbleChart.values[0].x,
+      y: chartData.bubbleChart.values[0].y,
+      r: chartData.bubbleChart.values[0].r
     }, {
-      x: 40,
-      y: 10,
-      r: 10
+      x: chartData.bubbleChart.values[1].x,
+      y: chartData.bubbleChart.values[1].y,
+      r: chartData.bubbleChart.values[1].r
     },
     
 ],

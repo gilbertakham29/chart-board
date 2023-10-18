@@ -4,63 +4,59 @@
 </template>
 
 <script>
-import { Doughnut } from 'vue-chartjs'
 import Chart from 'chart.js/auto';
-
+import chartData from "../chart-data.json"
 export default {
-  extends: Doughnut,
   
-  mounted() {
-    const ctx = document.getElementById('dochart');
+  
+  mounted(){
+
     const data = {
     
-  labels: [
-    'Food',
-    'Tech',
-    'News',
-    'Health',
-    'Shopping'
-  ],
-  datasets: [{
-    
-    label: 'My First Dataset',
-    data: [300, 50, 100,200,170,45],
-    backgroundColor: [
-      '#f794ab',
-      'grey',
-      'aqua',
-      'pink',
-      'dark-pink'
-    ],
-    
-    options: {
-      plugins: {
-      legend: {
-        title: {
-          display: true,
-          text: 'Legend Title',
-        
-        },
+    labels: chartData.doughnut.lables,
+    datasets: [{
       
+      label: 'My First Dataset',
+      data: chartData.doughnut.values,
+      backgroundColor: [
+        '#f794ab',
+        'grey',
+        'aqua',
+        'pink',
+        'dark-pink'
+      ],
+      
+      options: {
+        plugins: {
+        legend: {
+          title: {
+            display: true,
+            text: 'Legend Title',
+          
+          },
+        
+        }
       }
     }
-  }
-  
     
-  },
+      
+    },
+    
+  ]
   
-]
+  };
 
-};
-
-    const myChart = new Chart(ctx,{
+  const ctx = document.getElementById('dochart');
+  const myChart = new Chart(ctx,{
       type: 'doughnut',
   data: data,
-    }
-    )
-  },
+    })
+    
+  }
 
 }
+
+
 </script>
 
 <style  scoped>

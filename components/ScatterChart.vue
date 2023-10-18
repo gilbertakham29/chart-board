@@ -4,51 +4,49 @@
 
 <script>
 import { Chart } from 'chart.js/auto';
-
+import chartData from '../chart-data.json'
   export default {
     mounted(){
       const data = {
   datasets: [{
-    label: 'Scatter Dataset 1',
+    label: chartData.scatterchart.labels[0].label1,
     data: [{
-      x: -2,
-      y: 4
+      x: chartData.scatterchart.values.value1[0].x,
+      y: chartData.scatterchart.values.value1[0].y
     }, {
-      x: -1,
-      y: 1
+      x:chartData.scatterchart.values.value1[1].x,
+      y: chartData.scatterchart.values.value1[1].y
     }, {
-      x: 0,
-      y: 0
+      x: chartData.scatterchart.values.value1[2].x,
+      y: chartData.scatterchart.values.value1[2].y
     }, {
-      x: 1,
-      y: 1
+      x: chartData.scatterchart.values.value1[3].x,
+      y: chartData.scatterchart.values.value1[3].y
     },
   {
-    x:2,
-    y:4
+    x:chartData.scatterchart.values.value1[4].x,
+    y:chartData.scatterchart.values.value1[4].y
   }],
     backgroundColor: 'rgb(255, 99, 132)'
   },{
-    label:'Scatter Dataset 2',
-    data:[
-    {
-      x: -2,
-      y: -4
+    label:chartData.scatterchart.labels[0].label2,
+    data:[{
+      x: chartData.scatterchart.values.value2[0].x,
+      y: chartData.scatterchart.values.value2[0].y
     }, {
-      x: -1,
-      y: -1
+      x:chartData.scatterchart.values.value2[1].x,
+      y: chartData.scatterchart.values.value2[1].y
     }, {
-      x: 0,
-      y: 1
+      x: chartData.scatterchart.values.value2[2].x,
+      y: chartData.scatterchart.values.value2[2].y
     }, {
-      x: 1,
-      y: -1
+      x: chartData.scatterchart.values.value2[3].x,
+      y: chartData.scatterchart.values.value2[3].y
     },
   {
-    x:2,
-    y:-4
-  }
-    ],
+    x:chartData.scatterchart.values.value2[4].x,
+    y:chartData.scatterchart.values.value2[4].y
+  }],
     backgroundColor:"#88ccfc"
   }],
 };

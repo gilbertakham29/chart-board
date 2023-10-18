@@ -5,20 +5,15 @@
 
 <script>
 import Chart from 'chart.js/auto'
+import chartData from '../chart-data.json'
 export default {
  
     mounted(){
         const data = {
-  labels: [
-  'Samsung',
-    'IPhone',
-    'Realme',
-    'Oppo',
-    'Infix'
-  ],
+  labels: chartData.pichart.labels,
   datasets: [{
     label: 'My First Dataset',
-    data: [300, 50, 100,200,170,45],
+    data: chartData.pichart.values,
     backgroundColor: [
       '#f794ab',
       'grey',

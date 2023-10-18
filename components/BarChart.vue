@@ -4,13 +4,14 @@
 
 <script>
 import Chart from 'chart.js/auto'
+import chartData from '../chart-data.json'
 export default {
     mounted(){
         const data = {
-  labels: ['January','February','March','April','May','June','July'],
+  labels: chartData.barchart.labels,
   datasets: [{
     label: 'Dataset 1',
-    data: [40, 20, 12, 10, 30, 25, 56],
+    data: chartData.barchart.values,
     backgroundColor: [
       '#e588f7',
     ],

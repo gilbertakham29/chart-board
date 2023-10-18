@@ -4,17 +4,17 @@
 
 <script>
 import Chart from 'chart.js/auto'
-
+import chartData from '../chart-data.json';
 export default {
    mounted(){
  
 
 const data = {
-    labels:['January','February','March','April','May','June','July'],
+    labels:chartData.linchart.labels,
   datasets: [{
    
     label: 'Dataset 1',
-    data: [40, 20, 12, 56, 10, 30, 25, 56],
+    data: chartData.linchart.values1,
     fill: false,
     borderColor: '#f794ab',
     tension: 0.5
@@ -22,7 +22,7 @@ const data = {
   {
    
    label: 'Dataset 2',
-   data: [10, 30, 25, 56, 78, 18, 29],
+   data: chartData.linchart.values2,
    fill: false,
    borderColor: 'aqua',
    tension: 0.5

@@ -4,16 +4,16 @@
 
 <script>
 import { Chart } from 'chart.js/auto';
-
+import chartData from '../chart-data.json'
     export default {
         mounted(){
             
 const data = {
-  labels: ['January','February','March','April','May','June','July'],
+  labels: chartData.horizontalchart.labels,
   datasets: [{
     axis: 'y',
     label: 'Value 1',
-    data: [65, 59, 80, 81, 56, 55, 40],
+    data: chartData.horizontalchart.values.value1,
     fill: false,
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
@@ -38,7 +38,7 @@ const data = {
   {
     axis: 'y',
     label: 'Value 2',
-    data: [65, 59, 80, 81, 56, 55, 40],
+    data: chartData.horizontalchart.values.value2,
     fill: false,
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
@@ -63,7 +63,7 @@ const data = {
   {
     axis: 'y',
     label: 'Value 3',
-    data: [65, 59, 80, 81, 56, 55, 40],
+    data: chartData.horizontalchart.values.value3,
     fill: false,
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
@@ -88,7 +88,7 @@ const data = {
   {
     axis: 'y',
     label: 'Value 4',
-    data: [65, 59, 80, 81, 56, 55, 40],
+    data: chartData.horizontalchart.values.value4,
     fill: false,
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
@@ -113,7 +113,7 @@ const data = {
   {
     axis: 'y',
     label: 'Value 5',
-    data: [65, 59, 80, 81, 56, 55, 40],
+    data: chartData.horizontalchart.values.value5,
     fill: false,
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',

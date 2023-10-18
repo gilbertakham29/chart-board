@@ -5,20 +5,16 @@
 
 <script>
 import Chart from 'chart.js/auto'
+import chartData from '../chart-data.json'
+import chart from '~/plugins/chart';
 export default {
 
 mounted(){
     const data = {
-labels: [
-'Creative A',
-'Creative B',
-'Creative C',
-'Creative D',
-
-],
+labels: chartData.resocahrt.labels,
 datasets: [{
 label: 'My First Dataset',
-data: [24,26,28,45],
+data: chartData.resocahrt.values,
 backgroundColor: [
   '#f794ab',
   '#fac0c9',
